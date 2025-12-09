@@ -472,14 +472,14 @@ a {
   width: 100%;
   max-width: 450px;
   height: 500px;
-  border-radius: 10px;
+  border-radius: 50%;
   object-fit: cover;
   display: block;
 }
 
 .Image-border {
  padding: 5px;
- border-radius: 15px;
+ border-radius: 50%;
  background:  linear-gradient(135deg, #d4af37, #f9d976, #f39c12);
  display: inline-block;
  transition: all 0.4s ease-in-out;
