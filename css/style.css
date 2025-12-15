@@ -60,13 +60,14 @@ body {
   text-align: center;
   font-size: 2.5rem;
   font-weight: 600;
-  margin-bottom: 35px;
+  margin-bottom: 0.25rem !important;
   color: #fff;
 }
 
 .section-subtitle {
   text-align: center !important;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
 }
 
 /* NAVBAR BASE */
@@ -315,6 +316,16 @@ a {
   border-radius: 10px;
 }
 
+.btn-message {
+   background: linear-gradient(135deg, #f39c12, #f9d976, #e2b935); /* Yellow */
+  color: #000;
+  border: 2px solid #f6d037;
+  padding: 10px 10px;
+  font-weight: 600;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
 .btn-primary:hover {
   background:  linear-gradient(135deg, #d4af37, #f6cf59, #f39c12);
   color: #000;
@@ -335,9 +346,7 @@ a {
   color: #c9c7c7;
 }
 
-.btn.cv-btn {
-  padding: 11px 10px;
-}
+
 
 /* === HERO IMAGE === */
 .hero-image {
@@ -471,15 +480,15 @@ a {
 .about-img {
   width: 100%;
   max-width: 450px;
-  height: 500px;
-  border-radius: 50%;
+  height: 450px;
+  border-radius: 12px;
   object-fit: cover;
   display: block;
 }
 
 .Image-border {
  padding: 5px;
- border-radius: 50%;
+ border-radius: 15px;
  background:  linear-gradient(135deg, #d4af37, #f9d976, #f39c12);
  display: inline-block;
  transition: all 0.4s ease-in-out;
@@ -488,14 +497,14 @@ a {
 .about-content {
   flex: 1 1 55%;
   color: #fff;
-  margin-bottom: 2.9rem;
+
 }
 
 .about-content h2 {
   font-size: 2.5rem;
   font-weight: 600;
   color: #fff;
-  margin-bottom: 1rem;
+
 }
 
 .about-content p {
@@ -504,9 +513,7 @@ a {
   color: #ccc;
 }
 
-.about-content .btn {
-  margin-top: 1.5rem;
-}
+
 
 /* Responsive fix */
 @media (max-width: 768px) {
@@ -542,13 +549,7 @@ a {
   width: 100%;
 }
 
-.section-title {
-  text-align: center;
-  font-size: 2.5rem;
-  font-weight: 600;
-  margin-bottom: 35px;
-  color: #fff;
-}
+
 
 /* Two columns */
 .skills-grid {
@@ -668,7 +669,7 @@ a {
   }
 
   .section-title {
-    font-size: 1.7rem;
+    font-size: 1.5rem !important;
   }
 }
 
@@ -897,7 +898,13 @@ a {
   border: 1px solid #444;
   padding: 0.9375rem;
   color: #fff;
-  border-radius: 4px;
+  border-radius: 10px;
+}
+
+input,
+textarea {
+  font-size: 1rem !important;
+  font-family: inherit;
 }
 
 .contact-form input:focus,
@@ -1040,6 +1047,10 @@ a {
     gap: 1.5rem;
   }
 
+  .footer-container {
+    gap: 1px !important;
+  }
+
   .footer-socials a {
     margin: 0 10px;
   }
@@ -1047,7 +1058,7 @@ a {
 
   @media (max-width: 767.98px) {
     .section-wrapper {
-      padding: 2rem 0;
+      padding: 3rem 0;
       display: block !important; 
      }
      .container {
@@ -1060,5 +1071,3 @@ a {
         }
     }
 
-    background: linear-gradient(135deg, #d4af37, #f9d976, #f39c12);  
-  background: linear-gradient(135deg, #f39c12, #f9d976, #d4af37);
