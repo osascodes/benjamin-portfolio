@@ -470,6 +470,11 @@ a {
   flex-wrap: wrap;
 }
 
+#about {
+  margin-top: 0 !important;
+  padding-bottom: 5rem !important;
+}
+
 .about-image {
   flex: 1 1 35%;
   border-radius: 8px;
@@ -522,6 +527,11 @@ a {
     text-align: left;
   }
 
+  #about {
+  margin-top: 0 !important;
+  padding-bottom: 3rem  !important;
+}
+
   .about-content h2 {
     font-size: 1.7rem;
     text-align: center;
@@ -532,6 +542,10 @@ a {
     width: 250px;
     height: 250px;
     max-width: 300px;
+  }
+
+  .about-image {
+    margin-bottom: 10px;
   }
 }
 
@@ -549,7 +563,10 @@ a {
   width: 100%;
 }
 
-
+#skills {
+  margin-top: 0 !important;
+  padding-bottom: 5rem !important;
+}
 
 /* Two columns */
 .skills-grid {
