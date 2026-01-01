@@ -1,0 +1,136 @@
+<header>
+    <style>
+        .skills-section {
+  text-align: center;
+  width: 100%;
+}
+
+#skills {
+  margin-top: 0 !important;
+}
+
+/* Two columns */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px 80px;
+  align-items: start;
+}
+
+.skill {
+  text-align: left;
+}
+
+.skill-name {
+  display: inline-block;
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 2px;
+  font-weight: 500;
+}
+
+.skill-bar {
+  position: relative;
+  height: 10px;
+  background: #262626;
+  border-radius: 5px;
+}
+
+.skill-fill {
+  height: 100%;
+  background: linear-gradient(135deg,  #dea447, #f9d976, #d4af37);
+  border-radius: 5px;
+  transition: width 1s ease;
+}
+
+.skill-percent {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+    </style>
+</header>
+<img src="images/canvacrop5.png" alt="Logo" class="site-logo">
+<section class="section-wrapper skills-section" id="skills" data-aos="fade-up">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">My Skills</h2>
+     <p class="section-subtitle">The technologies and tools i work with.</p>
+    <div class="skills-grid">
+      <div class="skill">
+        <span class="skill-name" data-aos="zoom-in" data-aos-delay="0">HTML</span>
+        <div class="skill-bar">
+          <div class="skill-fill" style="width: 90%;"></div>
+          <span class="skill-percent"></span>
+        </div>
+      </div>
+
+      <div class="skill">
+        <span class="skill-name" data-aos="zoom-in" data-aos-delay="100">CSS</span>
+        <div class="skill-bar">
+          <div class="skill-fill" style="width: 85%;"></div>
+          <span class="skill-percent"></span>
+        </div>
+      </div>
+
+      <div class="skill">
+        <span class="skill-name" data-aos="zoom-in" data-aos-delay="200">JavaScript</span>
+        <div class="skill-bar">
+          <div class="skill-fill" style="width: 80%;"></div>
+          <span class="skill-percent"></span>
+        </div>
+      </div>
+
+      <div class="skill">
+        <span class="skill-name" data-aos="zoom-in" data-aos-delay="300">Bootstrap</span>
+        <div class="skill-bar">
+          <div class="skill-fill" style="width: 90%;"></div>
+          <span class="skill-percent"></span>
+        </div>
+      </div>
+
+      <div class="skill">
+        <span class="skill-name" data-aos="zoom-in" data-aos-delay="400">WordPress</span>
+        <div class="skill-bar">
+          <div class="skill-fill" style="width: 70%;"></div>
+          <span class="skill-percent"></span>
+        </div>
+      </div>
+
+      <div class="skill">
+        <span class="skill-name" data-aos="zoom-in" data-aos-delay="500">Web Design</span>
+        <div class="skill-bar">
+          <div class="skill-fill" style="width: 70%;"></div>
+          <span class="skill-percent"></span>
+        </div>
+      </div>
+
+      <div class="skill">
+        <span class="skill-name" data-aos="zoom-in" data-aos-delay="600">Git</span>
+        <div class="skill-bar">
+          <div class="skill-fill" style="width: 70%;"></div>
+          <span class="skill-percent"></span>
+        </div>
+      </div>
+
+      <div class="skill">
+        <span class="skill-name" data-aos="zoom-in" data-aos-delay="700">SEO</span>
+        <div class="skill-bar">
+          <div class="skill-fill" style="width: 80%;"></div>
+          <span class="skill-percent"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
