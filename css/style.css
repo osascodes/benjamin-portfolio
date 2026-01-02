@@ -614,7 +614,7 @@ a {
   .skills-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem 1.5rem !important;
+    gap: 2rem 4rem !important;
     justify-items: center;
   }
 
