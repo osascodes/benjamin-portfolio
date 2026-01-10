@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-const form = document.querySelector(".contact-form");
+const form = document.getElementById("contact-form");
 const successMessage = document.getElementById("success-message");
 const submitBtn = document.getElementById("submitBtn");
 
