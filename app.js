@@ -69,6 +69,11 @@ form.addEventListener("submit", async function (e) {
       // Show success message
       successMessage.classList.add("show");
 
+      successMessage.scrollIntoView({
+         behavior: "smooth",
+         block: "center" });
+
+
       // Clear form
       form.reset();
 
