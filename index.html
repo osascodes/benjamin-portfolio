@@ -289,10 +289,10 @@
       <h2 class="section-title"  data-aos="fade-up">Get In Touch</h2>
       <p class="section-subtitle">Have a project in mind? Let's talk.</p>
   
-
-    <div class="contact-box">
-          <!--contact form-->
-      <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" data-aos="fade-right" data-aos-delay="300">
+    <div class="contact-box" id="contact-form-layout">
+          <!--contact form--> 
+  <div class="form-wrapper">
+      <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" data-aos="fade-right" data-aos-delay="300" id="contact-form">
         <input type="hidden" name="access_key" value="20c3f9a4-5ee3-4c7f-9a0e-5f77fa60e7d3">
         <div class="form-group">
           <label>Name</label>
@@ -310,8 +310,12 @@
           <label>Message</label>
           <textarea rows="5" name="message" placeholder="Message" required></textarea>
         </div>
-        <button  type="submit" value="Send Message" class="btn btn-message">Send Message</button>
+        <button  type="submit" class="btn btn-message" id="submitBtn">Send Message</button>
       </form>
+       <div id="success-message" class="hidden-message">
+       Form Submitted Successfully! Thank you for reaching out to us.
+      </div>
+      </div>
 
       <!-- Contact Info -->
       <div class="contact-info" data-aos="fade-left">
@@ -327,7 +331,7 @@
           <i class="fas fa-envelope contact-icon"></i>
           <div class="info-text">
             <p class="label">Email</p>
-          <a href="mailto:ayerebenjaminosahon@gmail.com">ayerebenjaminosahon@gmail.com</a>
+          <a href="mailto:ayerebenjaminosahon@gmail.com">benjamin@osastech.com.ng</a>
           </div>
         </div>
         <div class="info-item">
@@ -341,7 +345,7 @@
         <p class="title-social">Social:</p>
         <div class="social-icons">
          <a href="https://github.com/osascodes" target="_blank"><i class="fab fa-github"></i></a>
-         <a href="https://linkedin.com/in/Benjamin Ayere" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+         <a href="https://linkedin.com/in/Benjamin Osahon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
          <a href="https://twitter.com/osascodes1" target="_blank"><i class="fab fa-x-twitter"></i></a>
         </div>
       </div>
@@ -379,7 +383,7 @@
       <h3>Contact</h3>
       <ul class="contact-info">
         <span class="icon-circle"><i class="fas fa-envelope"></i></span>
-         <li><a href="mailto:ayerebenjaminosahon@gmail.com">ayerebenjaminosahon@gmail.com</a></li>
+         <li><a href="mailto:ayerebenjaminosahon@gmail.com">benjamin@osastech.com.ng</a></li>
           <span class="icon-circle"><i class="fas fa-phone"></i></span>
         <li><a href="tel:+2349012798193">+234 091 279 8193</a></li>
          <span class="icon-circle"><i class="fab fa-whatsapp"></i></span>

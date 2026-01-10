@@ -9,7 +9,60 @@ html {
   line-height: 1.15;
  }
 
+/* Class to initially hide the success message */
+.hidden-message {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out; /* Smooth transition for fading */
+  text-align: center;
+  padding: 20px;
+}
 
+/* Class to make the success message visible and fade it in */
+.visible-message {
+  display: block;
+  opacity: 1;
+}
+
+/* Optional: Style for the sending state of the button */
+.contact-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.form-wrapper {
+  position: relative;
+}
+
+.hidden-message {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+
+ 
+}
+
+#success-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgba(119, 255, 109, 0.267);
+  text-align: center;
+   top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hidden-message.show {
+  display: block;
+  opacity: 1;
+}
+
+.contact-form.hidden {
+  display: none;
+}
 
 
 body {
@@ -24,14 +77,14 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1140px;
+  max-width: 1200px;
   margin-inline: auto;
   padding-inline: clamp(1rem, 4vw, 2rem) !important;
 
   }
 
 .section-wrapper {
-  padding 4rem 0;
+  padding: 4rem 0;
   width: 100%;
   position: relative; }
  
@@ -228,12 +281,11 @@ body {
 /* === HERO SECTION === */
 .hero-section {
   min-height: 100svh;
-  min-height: 100vh;
   align-items: center;
   display: flex;
   position: relative;
   z-index: 1;
-  padding: 6rem 0 !important;
+  padding: clamp(3rem, 5vw, 6rem) 0 !important;
   color: #fff;
   width: 100%;
 }
@@ -331,20 +383,20 @@ a {
 }
 
 
-
 /* === HERO IMAGE === */
 .hero-image {
-  max-width: 380px;
-  width: 100%;
+  max-width: 390px;
   flex: 1 1 20%;
+  max-width: 3;
   display: flex;
   border-radius: 8px;
   justify-content: center;
+  width: 100%;
+  height: auto;
 }
 
 .hero-img {
   width: 100%;
-  height: auto;
   object-fit: cover;
   border-radius: 12px;
   display: flex;
@@ -379,6 +431,7 @@ a {
   }
 
   .hero-section {
+    margin-top: 2rem !important;
     padding: 4rem 0 !important;
     min-height: auto !important;
   }
@@ -401,7 +454,7 @@ a {
   }
 }
 
-@media (min-width: 769px) and (max-width: 1180px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .hero-container {
     gap: 2.5rem;
     padding: 0 2rem;
@@ -411,18 +464,16 @@ a {
     display: flex;
     width: 100%;
   }
+
   .hero-section {
+    padding: 6rem 2rem;
     box-sizing: border-box;
     align-items: center;
   }
 
-  .hero-section {
-    padding: 6rem 2rem;
-  }
-
   .hero-title {
     font-size: 3.2rem;
-    line-height 1.2;
+    line-height: 1.2;
   }
 
   .hero-image {

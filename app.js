@@ -41,3 +41,52 @@ document.addEventListener("DOMContentLoaded", function() {
   once: true,
 })
 });
+
+
+const form = document.getElementById("contact-form");
+const successMessage = document.getElementById("success-message");
+const submitBtn = document.getElementById("submitBtn");
+
+form.addEventListener("submit", async function (e) {
+  e.preventDefault();
+
+  // Button state
+  submitBtn.textContent = "Sending...";
+  submitBtn.disabled = true;
+
+  const formData = new FormData(form);
+
+  try {
+    const response = await fetch(form.action, {
+      method: "POST",
+      body: formData,
+    });
+
+    if (response.ok) {
+      // Hide form
+      form.classList.add("hidden");
+
+      // Show success message
+      successMessage.classList.add("show");
+
+      // Clear form
+      form.reset();
+
+      // After 4 seconds → restore form
+      setTimeout(() => {
+        successMessage.classList.remove("show");
+        form.classList.remove("hidden");
+
+        submitBtn.textContent = "Send Message";
+        submitBtn.disabled = false;
+      }, 4000);
+    } else {
+      throw new Error("Submission failed");
+    }
+  } catch (error) {
+    alert("Something went wrong. Please try again.");
+
+    submitBtn.textContent = "Send Message";
+    submitBtn.disabled = false;
+  }
+});
