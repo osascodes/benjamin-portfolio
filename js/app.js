@@ -12,12 +12,13 @@ navToggle.addEventListener("click", () => {
 links.forEach(link => {
   link.addEventListener("click", () => {
     navLinks.classList.remove("show"); // hide the drawer
-    navToggle.classList.remove("active"); // remove toggle animation (if any)
+    navToggle.classList.remove("active"); // remove toggle animation 
   });
 });
 
 
 // Scroll active highlight
+
 window.addEventListener("scroll", () => {
   const scrollY = window.scrollY;
   links.forEach(link => {
@@ -78,13 +79,14 @@ form.addEventListener("submit", async function (e) {
       form.reset();
 
       // After 4 seconds → restore form
-      setTimeout(() => {
-        successMessage.classList.remove("show");
-        form.classList.remove("hidden");
+     setTimeout(() => {
+  successMessage.classList.remove("show");
+  form.classList.remove("hidden");
 
-        submitBtn.textContent = "Send Message";
-        submitBtn.disabled = false;
-      }, 4000);
+  submitBtn.textContent = "Send Message";
+  submitBtn.disabled = false;
+}, 1800);
+
     } else {
       throw new Error("Submission failed");
     }

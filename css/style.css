@@ -3,20 +3,15 @@
 *::after {
   box-sizing: border-box; }
 
-html {
-  scroll-behavior: smooth;
-  font-family: sans-serif;
-  line-height: 1.15;
- }
 
-body {
+html, body {
   font-family: "Poppins", Arial, sans-serif;
   background: #000000;
   font-size: 1rem;
-  line-height: 1.8;
+  line-height: 1.5;
   font-weight: 400;
   color: #f9f8f8;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 .container {
@@ -24,7 +19,6 @@ body {
   max-width: 1140px;
   margin-inline: auto;
   padding-inline: clamp(1rem, 4vw, 2rem) !important;
-
   }
 
 .section-wrapper {
@@ -47,6 +41,7 @@ body {
 }
 
 /* NAVBAR BASE */
+
 .navbar {
   position: fixed;
   top: 0;
@@ -66,6 +61,7 @@ body {
 }
 
 /* LOGO */
+
 .navbar-brand {
   font-size: 2rem;
   color: #fff;
@@ -77,6 +73,7 @@ body {
 }
 
 /* NAV LINKS */
+
 .nav-links {
   display: flex;
   list-style: none;
@@ -118,6 +115,7 @@ body {
 
 
 /* HAMBURGER ICON */
+
 .nav-toggle {
     text-align: center;
     display: flex;
@@ -145,6 +143,7 @@ body {
 }
 
 /* ANIMATION TO X */
+
 .nav-toggle.active .bar:nth-child(1) {
   transform: rotate(45deg) translate(6px, 6px);
 }
@@ -169,7 +168,6 @@ body {
   width: 20px;
 }
 
-/* MOBILE STYLES */
 @media (max-width: 768px) {
   .nav-container {
     padding: 0.8rem 1rem;
@@ -194,7 +192,7 @@ body {
   .nav-links {
   position: fixed;
   top: 60px;
-  right: -100%; /* hides it offscreen to the right */
+  right: -100%;
   left: auto;
   width: 100%;
   margin: 0 auto;
@@ -222,7 +220,8 @@ body {
   }
 }
 
-/* === HERO SECTION === */
+/* HERO SECTION */
+
 .hero-section {
   min-height: 100svh;
   align-items: center;
@@ -326,8 +325,6 @@ a {
   color: #c9c7c7;
 }
 
-
-/* === HERO IMAGE === */
 .hero-image {
   max-width: 390px;
   flex: 1 1 20%;
@@ -366,7 +363,6 @@ a {
   transform: scale(1.02);
 }
 
-/* === RESPONSIVE === */
 @media (max-width: 768px) {
   .hero-container {
     flex-direction: column-reverse;
@@ -398,6 +394,25 @@ a {
   }
 }
 
+@media (width: 768px) {
+  .hero-img {
+    width: 350px;
+    height: 350px !important;
+  }
+
+  .intro-text {
+    font-size: 1.3rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.5rem;
+  }
+}
+
 @media (min-width: 769px) and (max-width: 1024px) {
   .hero-container {
     gap: 2.5rem;
@@ -425,10 +440,6 @@ a {
     flex: 1 1 50%;
   }
 
-  .hero-img {
-    max-width: 700px;
-  }
-
   .hero-content {
     flex: 1;
     text-align: left;
@@ -450,6 +461,7 @@ a {
 }
  
 /* ABOUT SECTION */
+
 .about-container {
   display: flex;
   align-items: center;
@@ -506,10 +518,7 @@ a {
   color: #ccc;
 }
 
-
-
-/* Responsive fix */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .about-container {
     flex-direction: column;
     text-align: left;
@@ -538,10 +547,11 @@ a {
   }
 }
 
+
 @media (min-width: 768px) and (max-width: 1023px) {
   .about-img {
     width: 350px !important;
-    height: 420px !important;
+    height: 350px !important;
   }
 
    .about-content h2 {
@@ -549,15 +559,13 @@ a {
   }
 }
 
-/* ==== SKILLS SECTION ==== */
+/* SKILLS SECTION */
 
 .skills-section {
   text-align: center;
   width: 100%;
 }
 
-
-/* Wrapper */
 .skills-wrapper {
   display: flex;
   flex-direction: column;
@@ -567,7 +575,6 @@ a {
  justify-content: flex-start;
 }
 
-/* Rows (desktop) */
 .skills-row {
   display: flex;
   justify-content: center;
@@ -575,7 +582,6 @@ a {
   width: 100%;
 }
 
-/* Skill Box */
 .skill-box {
   border: 1px solid rgba(255, 255, 255, 0.7);
   padding: 1rem 2.5rem;
@@ -599,7 +605,6 @@ a {
   display: none;
 }
 
-/* ===== Mobile Layout ===== */
 @media (max-width: 768px) {
   .skills-wrapper {
     display: grid;
@@ -608,7 +613,6 @@ a {
     justify-items: center;
   }
 
-  /* Ignore row layout on mobile */
   .skills-row {
     display: contents;
   }
@@ -631,7 +635,7 @@ a {
   }
 }
 
-/* === SERVICES SECTION === */
+/* SERVICES SECTION */
 
 .services-grid {
   display: grid;
@@ -691,7 +695,6 @@ a {
   line-height: 1.6;
 }
 
-/* Responsive tweaks */
 @media (max-width: 768px) {
   .service-card {
     padding: 1.87rem 1.25rem;
@@ -702,7 +705,7 @@ a {
   }
 }
 
-/* ==== PROJECTS SECTION ==== */
+/* PROJECTS SECTION */
 
 .projects-section .section-subtitle {
   text-align: center !important;
@@ -795,7 +798,6 @@ a {
   color: #cccccc;
 }
 
-/* ==== RESPONSIVE ==== */
 @media (max-width: 768px) {
   .project-card img {
     height: 200px;
@@ -804,7 +806,7 @@ a {
 
 
 
-/* Contact form */
+/* CONTACT FORM */
 
 .section-title p {
   color: #ccc;
@@ -945,22 +947,20 @@ textarea {
   background-color: #222 !important;
 }
 
-/* Class to initially hide the success message */
 .hidden-message {
   display: none;
   opacity: 0;
-  transition: opacity 0.5s ease-in-out; /* Smooth transition for fading */
+  transition: opacity 0.5s ease-in-out;  
   text-align: center;
   padding: 1.25rem;
 }
 
-/* Class to make the success message visible and fade it in */
+
 .visible-message {
   display: block;
   opacity: 1;
 }
 
-/* Optional: Style for the sending state of the button */
 .contact-btn:disabled {
   cursor: not-allowed;
   opacity: 0.7;
@@ -968,8 +968,8 @@ textarea {
 
 .hidden-message {
   display: none;
-  opacity: 0;
-  transition: opacity 0.4s ease;
+  transform: translateY(10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
  
 }
 
@@ -983,13 +983,12 @@ textarea {
 .hidden-message.show {
   display: block;
   opacity: 1;
+  transform: translateY(0);
 }
 
 .contact-form.hidden {
   display: none;
 }
-
-
 
 @media (max-width: 768px) {
   #contact {
@@ -1029,7 +1028,7 @@ textarea {
   }
 }
 
-/* Footer */
+/* FOOTER SECTION */
 
 .footer {
   color: #ddd;
@@ -1154,9 +1153,11 @@ textarea {
       padding-right: 0.5rem !important;
       padding-left: 0.5rem !important;
      }
-    
-      html, body, .container, .section-wrapper {
-         overflow-x: hidden !important;
-        }
+    }
+
+    @media(min-width: 1024px) {
+      html {
+        scroll-behavior: smooth;
+      }
     }
 
