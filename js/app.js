@@ -2,22 +2,17 @@
 const navLinks = document.getElementById("nav-links");
 const links = document.querySelectorAll(".nav-links a");
 
-// Toggle menu
 navToggle.addEventListener("click", () => {
   navToggle.classList.toggle("active");
   navLinks.classList.toggle("show");
 });
 
-// Close the drawer automatically when a link is clicked
 links.forEach(link => {
   link.addEventListener("click", () => {
-    navLinks.classList.remove("show"); // hide the drawer
-    navToggle.classList.remove("active"); // remove toggle animation 
+    navLinks.classList.remove("show"); 
+    navToggle.classList.remove("active"); 
   });
 });
-
-
-// Scroll active highlight
 
 window.addEventListener("scroll", () => {
   const scrollY = window.scrollY;
@@ -51,7 +46,6 @@ const submitBtn = document.getElementById("submitBtn");
 form.addEventListener("submit", async function (e) {
   e.preventDefault();
 
-  // Button state
   submitBtn.textContent = "Sending...";
   submitBtn.disabled = true;
 
@@ -64,21 +58,17 @@ form.addEventListener("submit", async function (e) {
     });
 
     if (response.ok) {
-      // Hide form
+   
       form.classList.add("hidden");
-
-      // Show success message
+     
       successMessage.classList.add("show");
 
       successMessage.scrollIntoView({
          behavior: "smooth",
          block: "center" });
 
-
-      // Clear form
       form.reset();
 
-      // After 4 seconds → restore form
      setTimeout(() => {
   successMessage.classList.remove("show");
   form.classList.remove("hidden");

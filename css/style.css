@@ -499,20 +499,20 @@ a {
  transition: all 0.4s ease-in-out;
 }
 
-.about-content {
+.about-text {
   flex: 1 1 55%;
   color: #fff;
 
 }
 
-.about-content h2 {
+.about-text h2 {
   font-size: 2.5rem;
   font-weight: 600;
   color: #fff;
 
 }
 
-.about-content p {
+.about-text p {
   line-height: 1.8;
   margin-bottom: 1rem;
   color: #ccc;
@@ -530,7 +530,7 @@ a {
   padding-bottom: 2rem  !important;
 }
 
-  .about-content h2 {
+  .about-text h2 {
     font-size: 1.7rem;
     text-align: center;
     margin-top: 2rem;
@@ -554,7 +554,7 @@ a {
     height: 350px !important;
   }
 
-   .about-content h2 {
+   .about-text h2 {
     text-align: center;
   }
 }
